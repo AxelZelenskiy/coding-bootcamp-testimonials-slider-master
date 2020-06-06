@@ -1,0 +1,31 @@
+{
+  "name": "coding-bootcamp-testimonials-slider-master",
+  "version": "1.0.0",
+  "description": "My third project on Frontend mentor ",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelZelenskiy/coding-bootcamp-testimonials-slider-master.git"
+  },
+  "author": "AVZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AxelZelenskiy/coding-bootcamp-testimonials-slider-master/issues"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "homepage": "https://github.com/AxelZelenskiy/coding-bootcamp-testimonials-slider-master#readme"
+}
