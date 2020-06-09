@@ -22,8 +22,17 @@ body {
 		.wrapper {
 			margin: 0 auto;
 			width: 85%;
-			.slide {
+			.slider {
+				position: relative;
+				padding: 0;
+				height: 540px;				
+				.slide {
 				display: flex;
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
 				.left-block {
 				position: relative;
 				padding: 0;
@@ -63,6 +72,11 @@ body {
 					background: url('../images/image-john.jpg') no-repeat center;
 				}
 			}
+			.slide.two {
+				left: 150%;
+			}
+			}
+			
 			
 			
 		}
