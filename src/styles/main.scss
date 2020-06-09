@@ -22,8 +22,9 @@ body {
 		.wrapper {
 			margin: 0 auto;
 			width: 85%;
-			display: flex;
-			.left-block {
+			.slide {
+				display: flex;
+				.left-block {
 				position: relative;
 				padding: 0;
 				width: 60%;
@@ -40,22 +41,30 @@ body {
 						font-size: 1.2rem;
 						span {
 							opacity: .7;
+							}
 						}
 					}
 				}
-			}
-			.right-block {
+				.right-block {
 				width: 40%;
 				max-width: 100%;
 				padding: 20%;
 				height: auto;
-				background: url('../images/image-tanya.jpg') no-repeat center;
 				background-size: contain;
-				// background-color: yellow;
 				border-radius: 5px;
 				border: 1px solid rgba($GrayishBlue, .05);
 				box-shadow: 5px 10px 10px -8px rgba(0,0,0, .5);
+				}
+				.tanya {
+					background: url('../images/image-tanya.jpg') no-repeat center;
+					
+				}
+				.john {
+					background: url('../images/image-john.jpg') no-repeat center;
+				}
 			}
+			
+			
 		}
 	}
 }
