@@ -16,12 +16,13 @@ body {
 		min-height: 97vh;
 		font-weight: 300;
 		color: $DarkBlue;
-		background: url('../images/pattern-bg.svg') no-repeat;
-		background-position: 95% 55%;
-		background-size: 50%;
+		// background: url('../images/pattern-bg.svg') no-repeat;
+		// background-position: 90% 50%;
+		// background-size: 50%;
 		.wrapper {
-			margin: 0 auto;
+			margin: 10% auto;
 			width: 85%;
+			// padding: 5%;
 			overflow: hidden;
 			.slider {
 				position: relative;
@@ -58,7 +59,11 @@ body {
 				}
 				.right-block {
 				width: 40%;
+				// padding: 10%;
 				position: relative;
+				background: url('../images/pattern-bg.svg') no-repeat;
+				background-size: contain;
+				background-position: center;
 				img {
 				max-width: 100%;
 				height: auto;
@@ -77,4 +82,43 @@ body {
 			
 		}
 	}
+}
+
+@media screen and (max-width: 400px) {
+
+	body > main { 
+		background-position: 0 10%;
+		background-size: 95%;
+		.wrapper > .slider {
+			.slide {
+				flex-direction: column-reverse;
+				top: 0;
+				left: 0;
+				transform: none;
+				.left-block, .right-block {
+					width: 100%;
+					font-size: 1rem;
+					font-weight: 500;
+				}
+				.left-block {
+					.quotte {
+						position: static;
+						padding: 5%;
+						text-align: center;
+						h3 {
+							margin-top: 1rem;
+							span {
+								display: block;
+								opacity: .35;
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+				.right-block {
+					padding: 5%;
+					margin-bottom: 2rem;
+				}
+			}
+	} }
 }
