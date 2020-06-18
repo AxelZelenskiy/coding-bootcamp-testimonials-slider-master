@@ -1,15 +1,24 @@
 import './styles/main.scss';
 
+
+
+	function slide_update(element) {
+		element.classList.toggle('active');
+	};
+
+
   let slides = document.querySelectorAll('.slide'),
-    buttonPrev = document.querySelector('.buttons :first-child'),
-    buttonNext = document.querySelector('.buttons :last-child');
-    console.log(buttonPrev === undefined,' 00000')
-  if (!slides.lenght === 0 || (buttonPrev !== undefined) || buttonNext !== undefined) {
-  	console.log('start')
-  		buttonPrev.addEventListener('click', (e) => {
-  			console.log('pushed prev button')
+    buttonsPrev = document.querySelectorAll('.buttons button:nth-child(1)'),
+    buttonsNext = document.querySelectorAll('.buttons button:nth-child(2)');
+  if (!slides.lenght === 0 || (!buttonsPrev.lenght !== 0) || !buttonsNext.lenght !== 0) {
+  		buttonsPrev.forEach(function(button){
+  			button.addEventListener('click',function(){
+  				slides.forEach(slide_update);
+  			});
   		});
-  		buttonNext.addEventListener('click', function(){
-  			console.log('pushed Next');
+  		buttonsNext.forEach(function(button){
+  			button.addEventListener('click',function(){
+  				slides.forEach(slide_update);
+  			});
   		});
-  } else { console.warn('Not found one of control or controlled elements');}
+  } else { console.warn('Not found one of control element  or controlled elements');}
