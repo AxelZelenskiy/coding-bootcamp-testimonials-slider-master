@@ -16,13 +16,9 @@ body {
 		min-height: 97vh;
 		font-weight: 300;
 		color: $DarkBlue;
-		// background: url('../images/pattern-bg.svg') no-repeat;
-		// background-position: 90% 50%;
-		// background-size: 50%;
 		.wrapper {
 			margin: 10% auto;
 			width: 85%;
-			// padding: 5%;
 			overflow: hidden;
 			.slider {
 				position: relative;
@@ -96,16 +92,28 @@ body {
 				}
 
 			}
+			.slider > .slide {
+
+			}
 			.slide.active {
-				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%);
+				opacity: 1;
+				transition: left .5s,opacity .6s;
 			}
 			.slide {
+				top: 50%;
 				left: 150%;
+				transform: translate(-50%,-50%);
+				opacity: 0;
+				transition: left .5s,opacity .6s;
+				}
 			}
+			.slide.one {
+				left: -150%;
+				transition: left .5s;
+				opacity: 0;
+				transition: opacity .6s;
 			}
-			
 			
 			
 		}
@@ -154,7 +162,7 @@ body {
 			.slide {
 				flex-direction: column-reverse;
 				top: 0;
-				left: 0;
+				left: 150%;
 				transform: none;
 				.left-block, .right-block {
 					width: 100%;
@@ -178,8 +186,10 @@ body {
 				}
 				.right-block {
 					padding: 10%;
-					// margin-bottom: 2rem;
 				}
+			}
+			.slide.active {
+				left: 0;
 			}
 	} }
 }
