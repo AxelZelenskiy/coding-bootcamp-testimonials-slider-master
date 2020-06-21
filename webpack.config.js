@@ -31,6 +31,13 @@ module.exports = {
 							}
 						},
 						{
+							test	: /\.js$/,
+							loader  : 'strip-loader',
+							options	: {
+									strip : ['console.*','alert*']
+							} 
+						},
+						{
 							test: /\.(svg|png|jpeg|jpg|gif|png)$/,
 							use	: { 
 								loader: 'file-loader',
