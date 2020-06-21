@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "032d8513bf810df9541c";
+/******/ 	var hotCurrentHash = "31916b0472dcff47bedd";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -867,7 +867,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n\r\n\r\n\tfunction slide_update(element) {\r\n\t\telement.classList.toggle('active');\r\n\t};\r\n\r\n\r\n  let slides = document.querySelectorAll('.slide'),\r\n    buttonsPrev = document.querySelectorAll('.buttons button:nth-child(1)'),\r\n    buttonsNext = document.querySelectorAll('.buttons button:nth-child(2)');\r\n    console.log('Prev ->>',buttonsPrev.length );\r\n    console.log('Next ->>',buttonsNext.length === 0);\r\n    console.log('Slides ->>',slides.length === 0);\r\n  if ( (slides.length !== 0) && (buttonsPrev.length !== 0) && (buttonsNext.length !== 0) ) {\r\n  \t\tbuttonsPrev.forEach(function(button){\r\n  \t\t\tbutton.addEventListener('click',function(){\r\n  \t\t\t\tslides.forEach(slide_update);\r\n  \t\t\t});\r\n  \t\t});\r\n  \t\tbuttonsNext.forEach(function(button){\r\n  \t\t\tbutton.addEventListener('click',function(){\r\n  \t\t\t\tslides.forEach(slide_update);\r\n  \t\t\t});\r\n  \t\t});\r\n  } else { console.warn('Not found one of control element  or controlled elements');}\n\n//# sourceURL=webpack:///./scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n\r\n\r\n\tfunction slide_update(element) {\r\n\t\telement.classList.toggle('active');\r\n\t};\r\n\r\n\r\n  let slides = document.querySelectorAll('.slide'),\r\n    buttonsPrev = document.querySelectorAll('.buttons button:nth-child(1)'),\r\n    buttonsNext = document.querySelectorAll('.buttons button:nth-child(2)');\r\n\r\n\r\n\r\n  if ( (slides.length !== 0) && (buttonsPrev.length !== 0) && (buttonsNext.length !== 0) ) {\r\n  \t\tbuttonsPrev.forEach(function(button){\r\n  \t\t\tbutton.addEventListener('click',function(){\r\n  \t\t\t\tslides.forEach(slide_update);\r\n  \t\t\t});\r\n  \t\t});\r\n  \t\tbuttonsNext.forEach(function(button){\r\n  \t\t\tbutton.addEventListener('click',function(){\r\n  \t\t\t\tslides.forEach(slide_update);\r\n  \t\t\t});\r\n  \t\t});\r\n  } else { console.warn('Not found one of control element  or controlled elements');}\n\n//# sourceURL=webpack:///./scripts.js?");
 
 /***/ }),
 
